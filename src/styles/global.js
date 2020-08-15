@@ -23,6 +23,8 @@ export default createGlobalStyle`
     -webkit-font-smoothing: antialiased;
   }
 
+  
+
   html, body, #root {
     height: 100%;
     display: flex;
@@ -32,6 +34,7 @@ export default createGlobalStyle`
 
   .pointer{
     cursor:pointer;
+    transition: color .2s;
   }
 
   .deleteIcon:hover{
@@ -44,4 +47,36 @@ export default createGlobalStyle`
   .moveVerticalIcon:hover{
     color:#75d0e4 !important;
   }
-`;
+  
+  input, textarea{
+    height: 25px;
+    width:100%;
+    max-width:300px;
+    margin-bottom:5px;
+    border:0px;
+    color: #828282;
+    caret-color: #75d0e4;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+  }
+
+  .label{
+    font-size: 10px;
+    font-weight: 200;
+    color: #828282;
+    text-align: end;
+    display:inline;
+  }
+
+  .title{
+    font-size: 14px;
+    font-weight: 500;
+    color: #6d6d6d;
+  }
+
+  .description{
+    font-size: 10px;
+    font-weight: 200;
+    color: #828282;
+  }
+  `;

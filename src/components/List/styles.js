@@ -10,6 +10,16 @@ export const Container = styled.div`
   color: #00b1f8;
 `;
 
+export const Plate = styled.div`
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 4px;
+  margin: 10px 0;
+  padding: 10px;
+  box-shadow: 4px 4px 8px 0 rgb(0 0 0 / 5%), -4px -4px 20px 0 rgb(255 255 255 / 50%);
+`;
+
 export const Badges = styled.div`
   font-size: 14px;
   font-weight: 500;
@@ -30,16 +40,20 @@ export const Controls = styled.div`
   justify-content: flex-end;
 `;
 
-export const Description = styled.div`
-  font-size: 10px;
-  font-weight: 200;
-  color: #828282;
-`;
-
 export const Footer = styled.div`
   font-size: 13px;
   font-weight: 500;
-  padding-left: 10px;
+`;
+
+export const Button = styled.div`
+  font-weight: 500;
+  font-size: 13px;
+  font-weight: 500;
   color: #a2a2a2;
-  cursor:pointer;
+  cursor: pointer;
+  transition: color 0.2s;
+
+  &:hover {
+    color: #62b0d0;
+  }
 `;

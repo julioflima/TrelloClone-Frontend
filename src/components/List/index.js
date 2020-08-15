@@ -1,7 +1,8 @@
 import React from 'react';
 import { FiArrowLeft, FiArrowRight, FiX } from 'react-icons/fi';
 
-import { Container, Title, Controls, Footer } from './styles';
+import { Container, Plate, Title, Controls, Footer, Button } from './styles';
+import NewCard from '../Card/styles';
 
 export default function Card(props) {
   return (
@@ -15,7 +16,15 @@ export default function Card(props) {
         </Controls>
       </Title>
       {props.children}
-      <Footer>Add a card...</Footer>
+      <Footer>
+      <Plate>
+        <input className="label" placeholder="Insert label here..." type="text" />
+        <input className="title" placeholder="Insert title here..." type="text" />
+        <textarea className="description" placeholder="Insert description card..." type="text" />
+      </Plate>
+      <Button>Add card...</Button>
+    </Footer>
+      
     </Container>
   );
 }

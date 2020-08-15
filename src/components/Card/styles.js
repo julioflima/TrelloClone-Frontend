@@ -8,7 +8,7 @@ export const Container = styled.div`
   box-shadow: 4px 4px 8px 0 rgb(0 0 0 / 5%), -4px -4px 20px 0 rgb(255 255 255 / 50%);
 `;
 
-export const Badges = styled.div`
+export const Label = styled.div`
   font-size: 10px;
   font-weight: 200;
   color: #fff;
