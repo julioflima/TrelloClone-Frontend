@@ -5,48 +5,46 @@ import { Footer, Plate, Button } from './styles';
 
 export default function AddList() {
   const [name, setName] = useState('');
-  const [label, setLabel] = useState('Add list...');
-  const [visibleInput, setVisibleInput] = useState(false)
+  const [footerText, setFooterText] = useState('Add list...');
+  const [visibleInput, setVisibleInput] = useState(false);
 
-  const handleKeyDown = async e => {
+  const handleKeyDown = async (e) => {
     if (e.key === 'Enter') {
-
       const data = { name };
 
-      try{
-        const response = await api.post('list',data)
+      try {
+        const response = await api.post('lists', data);
         console.log(response);
-        setLabel('Add list...')
+        setFooterText('Add list...');
         setVisibleInput(false);
+        window.location.reload(false);
 
-
-      }catch(err){
+      } catch (err) {
         console.log(err);
-        alert('Error creating new list. Please, try again.')
+        alert('Error creating new list. Please, try again...');
       }
     }
   };
 
-  const handleShowAddList = ()=>{
+  const handleShowAddList = () => {
     setVisibleInput(true);
-    setLabel('Press enter to create a list...');
-  }
+    setFooterText('Press enter to create a list...');
+  };
 
   return (
     <Footer>
-      {
-        visibleInput && 
+      {visibleInput && (
         <Plate onKeyDown={handleKeyDown}>
           <input
             className="title"
             placeholder="Insert title list here..."
             type="text"
             value={name}
-            onChange={e => setName(e.target.value)}
+            onChange={(e) => setName(e.target.value)}
           />
         </Plate>
-        }
-      <Button onClick={handleShowAddList}>{label}</Button>
+      )}
+      <Button onClick={handleShowAddList}>{footerText}</Button>
     </Footer>
   );
 }

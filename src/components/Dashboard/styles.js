@@ -1,14 +1,9 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
-import logoImg from "./assets/images/logo.png";
-import machinaImg from "./assets/images/machina.gif";
+import logoImg from '../../assets/images/logo.png';
+import machinaImg from '../../assets/images/machina.gif';
 
-export const Container = styled.div`
-  height: 100%;
-  display: flex;
-  align-items: start;
-`;
-export const Dashboard = styled.div`
+export const Content = styled.div`
   height: calc(100vh - 2vmax);
   width: calc(100vw - 2vmax);
   display: flex;
@@ -33,6 +28,12 @@ export const Navbar = styled.div`
   background: #fff;
   flex-grow: 2;
   border-radius: 8px 8px 0px 0px;
+`;
+
+export const Container = styled.div`
+  height: 100%;
+  display: flex;
+  align-items: start;
 `;
 
 export const Logo = styled.div`
