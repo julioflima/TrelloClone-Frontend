@@ -29,4 +29,19 @@ export default createGlobalStyle`
     justify-content: center; 
     align-items: center;
   }
+
+  .pointer{
+    cursor:pointer;
+  }
+
+  .deleteIcon:hover{
+    color:#000 !important;
+  }
+
+  .moveHorizontalIcon:hover{
+    color:#75e497 !important;
+  }
+  .moveVerticalIcon:hover{
+    color:#75d0e4 !important;
+  }
 `;

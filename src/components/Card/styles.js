@@ -26,8 +26,16 @@ export const Description = styled.div`
   color: #828282;
 `;
 
-export const Buttons = styled.div`
+export const Controls = styled.div`
   display: flex;
   justify-content: flex-end;
-  cursor:pointer;
+
+  &:hover ${Button} {
+    color: #0ee;
+  }
+`;
+
+export const Button = styled.div`
+  cursor: pointer;
+  padding-left:5px
 `;
