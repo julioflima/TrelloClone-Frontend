@@ -18,6 +18,7 @@ export const Plate = styled.div`
   margin: 10px 0;
   padding: 10px;
   box-shadow: 4px 4px 8px 0 rgb(0 0 0 / 5%), -4px -4px 20px 0 rgb(255 255 255 / 50%);
+  transition: display 1s;
 `;
 
 export const Badges = styled.div`
