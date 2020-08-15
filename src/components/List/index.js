@@ -2,9 +2,8 @@ import React from 'react';
 import { FiArrowLeft, FiArrowRight, FiX } from 'react-icons/fi';
 
 import { Container, Plate, Title, Controls, Footer, Button } from './styles';
-import NewCard from '../Card/styles';
 
-export default function Card(props) {
+export default function List(props) {
   return (
     <Container>
       <Title>

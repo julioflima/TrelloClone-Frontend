@@ -1,7 +1,11 @@
 {
   "parserOptions": {
     // Required for certain syntax usages
-    "ecmaVersion": 6
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
   },
   "plugins": [
     "promise",
@@ -9,6 +13,7 @@
   ],
   "extends": "eslint:recommended",
   "rules": {
+    "semi": "error",
     "newline-per-chained-call": ["error", { "ignoreChainWithDepth": 2 }],
     // Removed rule "disallow the use of console" from recommended eslint rules
     "no-console": "off",

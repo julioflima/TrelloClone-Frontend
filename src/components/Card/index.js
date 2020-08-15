@@ -1,9 +1,9 @@
 import React from 'react';
 import { FiX, FiArrowUp, FiArrowDown, FiArrowLeft, FiArrowRight } from 'react-icons/fi';
 
-import { Container, Label, Title, Description, Controls, Button } from './styles';
+import { Container, Label, Title, Description, Controls } from './styles';
 
-export default function AddList() {
+export default function Card() {
   return (
     <Container>
       <Label>Features</Label>

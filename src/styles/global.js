@@ -1,7 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
 
-import 'react-circular-progressbar/dist/styles.css';
-
 export default createGlobalStyle`
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap');
@@ -18,7 +16,7 @@ export default createGlobalStyle`
   ::-webkit-scrollbar-thumb {
     border-radius: 10px;
     background-color: #0ef;
-    background-image: -webkit-gradient( linear, 0 0, 0 100%, color-stop(0.5,#00b8ff), color-stop(0.5,#0efe), to(#0ee)    );
+    background-image: -webkit-gradient( linear, 0 0, 0 100%, color-stop(0.5,#00b8ff), color-stop(0.5,#0efe), to(#0ee));
   }
 }
 

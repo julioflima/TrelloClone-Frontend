@@ -4,16 +4,6 @@
 /node_modules
 /.pnp
 .pnp.js
-.expo/*
-npm-debug.*
-*.jks
-*.p8
-*.p12
-*.key
-*.mobileprovision
-*.orig.*
-web-build/
-web-report/
 
 # testing
 /coverage
@@ -23,7 +13,6 @@ web-report/
 
 # misc
 .DS_Store
-.env
 .env.local
 .env.development.local
 .env.test.local
