@@ -9,9 +9,15 @@ export const Container = styled.div`
 `;
 
 export const Badges = styled.div`
-  font-size: 14px;
-  font-weight: 500;
-  color: #6d6d6d;
+  font-size: 10px;
+  font-weight: 200;
+  color: #fff;
+  background: #9061ce;
+  padding: 1px 10px 1px 10px;
+  border-radius: 10px;
+  display: inline;
+  float: right;
+  box-shadow: 2px 2px 8px 0 rgb(0 0 0 / 20%), -4px -4px 20px 0 rgb(255 255 255 / 50%);
 `;
 
 export const Title = styled.div`
@@ -29,13 +35,4 @@ export const Description = styled.div`
 export const Controls = styled.div`
   display: flex;
   justify-content: flex-end;
-
-  &:hover ${Button} {
-    color: #0ee;
-  }
-`;
-
-export const Button = styled.div`
-  cursor: pointer;
-  padding-left:5px
 `;

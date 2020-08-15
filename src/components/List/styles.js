@@ -25,6 +25,11 @@ export const Title = styled.div`
   justify-content: space-between;
 `;
 
+export const Controls = styled.div`
+  display: flex;
+  justify-content: flex-end;
+`;
+
 export const Description = styled.div`
   font-size: 10px;
   font-weight: 200;

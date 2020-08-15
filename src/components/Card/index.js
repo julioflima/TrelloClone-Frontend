@@ -1,11 +1,12 @@
 import React from 'react';
 import { FiX, FiArrowUp, FiArrowDown, FiArrowLeft, FiArrowRight } from 'react-icons/fi';
 
-import { Container, Title, Description, Controls, Button } from './styles';
+import { Container, Badges, Title, Description, Controls, Button } from './styles';
 
 export default function AddList() {
   return (
     <Container>
+      <Badges>Features</Badges>
       <Title>Trollololw</Title>
       <Description>EIEIEIEIEIE</Description>
       <Controls>

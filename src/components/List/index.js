@@ -1,17 +1,21 @@
 import React from 'react';
-import { FiX } from 'react-icons/fi';
+import { FiArrowLeft, FiArrowRight, FiX } from 'react-icons/fi';
 
-import { Container, Title, Footer  } from './styles';
+import { Container, Title, Controls, Footer } from './styles';
 
 export default function Card(props) {
   return (
     <Container>
       <Title>
         {props.name}
-        <FiX className="pointer" size={16} color="#00b1f8"/>
+        <Controls>
+          <FiArrowLeft className="moveHorizontalIcon pointer" size={14} color="#cacbcc" />
+          <FiArrowRight className="moveHorizontalIcon pointer" size={14} color="#cacbcc" />
+          <FiX className="deleteIcon pointer" size={14} color="#cacbcc" />
+        </Controls>
       </Title>
       {props.children}
-      <Footer >Add a card...</Footer>
+      <Footer>Add a card...</Footer>
     </Container>
   );
 }
